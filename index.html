@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Runtime Template</title>
+
+    <!-- ✅ Inject config BEFORE analytics -->
+    <script>
+      window.__APP_ID__ = "app_1773129547612";
+      window.__POSTHOG_KEY__ = "phc_238op2G9i5a1ZBdi5dAlZgzeUsIaK87LU0fAuzOeyGD";
+      window.__POSTHOG_HOST__ = "https://app.posthog.com";
+      window.__API_BASE__ = "https://api.numbleai.com";
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- ✅ React must load FIRST -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ✅ Analytics must load AFTER React -->
+
+    <script src="/analytics.js" defer>  </script>
+  </body>
+</html>
