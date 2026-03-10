@@ -1,0 +1,12 @@
+USER PROMPT: a simple calculator app with green buttons
+______________________________________________________________________
+
+
+FRONTEND PAGES DECIDED:
+[
+  {
+    "name": "Home",
+    "route": "/",
+    "description": "The main calculator interface"
+  }
+]
